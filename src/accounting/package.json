@@ -1,0 +1,37 @@
+{
+  "name": "account-management-system",
+  "version": "1.0.0",
+  "description": "Account Management System - Converted from COBOL legacy application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "dev": "node --inspect index.js"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js",
+      "**/?(*.)+(spec|test).js"
+    ]
+  },
+  "keywords": [
+    "accounting",
+    "cobol-migration",
+    "legacy-modernization"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^29.7.0"
+  }
+}
